@@ -183,7 +183,7 @@ st.write("Disclaimer: Please note that this information should not be construed 
 #Print predicted outcome of the game with the use of a button!
 if st.button('PREDICT'):
     st.write("")
-    st.subheader('Final Prediction:')
+    st.subheader('Prediction:')
     st.metric('', winner, '')
     st.subheader('Potential Winnings:')
     st.metric('', f'${winnings}', '')
