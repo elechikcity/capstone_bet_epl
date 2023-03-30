@@ -181,7 +181,7 @@ st.write("")
 st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
 if Bet_Amount > 1000:
-    st.write("Please size your bet responsibly!")
+    st.subheader("Please size your bet responsibly!")
 else:
     st.write("")
 #Print predicted outcome of the game with the use of a button!
