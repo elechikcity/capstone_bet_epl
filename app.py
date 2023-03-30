@@ -194,6 +194,7 @@ st.write("Disclaimer: Please note that this information should not be construed 
 
 
 page_bg_img =
+
 <style>
 body {
 background-image: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/");
