@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # Set Page configuration
 # Read more at https://docs.streamlit.io/1.6.0/library/api-reference/utilities/st.set_page_config
-st.set_page_config(page_title='Predict outcome of EPL match', page_icon='⚽', layout='wide', initial_sidebar_state='expanded', background_image = 'https://wallpaper-mania.com/post/wallpaper-id-777000585207/')
+st.set_page_config(page_title='Predict outcome of EPL match', page_icon='⚽', layout='wide', initial_sidebar_state='expanded')
 
 # Set title of the app
 st.title('⚽ Predict the outcome of an EPL match! ⚽')
