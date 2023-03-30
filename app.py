@@ -196,7 +196,7 @@ def set_bg_hack_url():
     '''
     A function to set background image from a url.
     '''
-    image_url = "https://mcdn.wallpapersafari.com/medium/76/77/56aRes.jpg"
+    image_url = "https://mcdn.wallpapersafari.com/medium/53/26/vxnRkX.jpg"
     st.markdown(
         f"""
         <style>
