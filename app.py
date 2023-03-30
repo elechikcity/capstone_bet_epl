@@ -195,7 +195,7 @@ def set_bg_hack_url():
     '''
     A function to set background image from a url.
     '''
-    image_url = "https://pbs.twimg.com/media/DtMPDqbWwAApkpv?format=jpg&name=4096x4096"
+    image_url = "https://pbs.twimg.com/media/CwqsIN1XEAAa7iD?format=jpg&name=900x900"
     st.markdown(
         f"""
         <style>
