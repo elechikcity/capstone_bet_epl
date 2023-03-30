@@ -192,7 +192,27 @@ else:
 
 st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
+set_bg_hack_url()
 
 #Unused code below:
 # Print predicted outcome of the game
