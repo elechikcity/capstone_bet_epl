@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # Set Page configuration
 # Read more at https://docs.streamlit.io/1.6.0/library/api-reference/utilities/st.set_page_config
-st.set_page_config(page_title='Predict outcome of EPL match', page_icon='⚽', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title='Predict outcome of EPL match', page_icon='⚽', layout='wide', initial_sidebar_state='expanded', background_image = 'https://wallpaper-mania.com/post/wallpaper-id-777000585207/')
 
 # Set title of the app
 st.title('⚽ Predict the outcome of an EPL match! ⚽')
@@ -193,17 +193,6 @@ else:
 st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
 
-page_bg_img =
-
-<style>
-body {
-background-image: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/");
-background-size: cover;
-}
-</style>
-
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 #Unused code below:
 # Print predicted outcome of the game
