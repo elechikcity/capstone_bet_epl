@@ -195,7 +195,7 @@ def set_bg_hack_url():
     '''
     A function to set background image from a url.
     '''
-    image_url = "https://wallpaperaccess.com/download/dark-soccer-2671403"
+    image_url = "https://pbs.twimg.com/media/DtMPDqbWwAApkpv?format=jpg&name=4096x4096"
     st.markdown(
         f"""
         <style>
@@ -210,8 +210,7 @@ def set_bg_hack_url():
 
 set_bg_hack_url()
 
-
-
+#https://wallpaperaccess.com/download/dark-soccer-2671403
 
 #Unused code below:
 # Print predicted outcome of the game
