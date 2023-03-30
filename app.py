@@ -204,7 +204,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/");
+             background: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/][image]https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702048137.jpg");
              background-size: cover
          }}
          </style>
