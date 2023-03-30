@@ -194,25 +194,23 @@ st.write("Disclaimer: Please note that this information should not be construed 
 
 def set_bg_hack_url():
     '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
+    A function to set background image from a url.
     '''
-        
+    image_url = "https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702048137.jpg"
     st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/][image]https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702048137.jpg");
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+        f"""
+        <style>
+            .stApp {{
+                background-image: url('{image_url}');
+                background-size: cover;
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 set_bg_hack_url()
+
 
 #Unused code below:
 # Print predicted outcome of the game
