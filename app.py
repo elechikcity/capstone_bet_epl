@@ -178,6 +178,8 @@ else:
 
 st.write("")
 
+st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
+
 #Print predicted outcome of the game with the use of a button!
 if st.button('PREDICT'):
     st.write("")
@@ -188,8 +190,6 @@ if st.button('PREDICT'):
 else:
     st.write('')
 
-
-st.sidebar.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
 def set_bg_hack_url():
     '''
