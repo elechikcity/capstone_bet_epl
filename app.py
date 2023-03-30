@@ -193,6 +193,17 @@ else:
 st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://wallpaper-mania.com/post/wallpaper-id-777000585207/");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 #Unused code below:
 # Print predicted outcome of the game
 
