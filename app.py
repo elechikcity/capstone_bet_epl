@@ -157,8 +157,8 @@ knn.fit(X_train, y_train)
 
 y_pred = knn.predict([[Home_Odds, Draw_Odds, Away_Odds, matchday_Monday, matchday_Saturday, matchday_Sunday, matchday_Thursday, matchday_Tuesday, matchday_Wednesday, Home_Team_Rank, Away_Team_Rank, ref_AMarriner, ref_ATaylor, ref_CFoy, ref_HWebb, ref_JMoss, ref_KFriend, ref_LMason, ref_LProbert, ref_MAtkinson, ref_MClattenburg, ref_MDean, ref_MOliver, ref_MRiley, ref_PDowd, ref_MJones]])
 
-#Generating the predicted outcome 
-
+#Generating the predicted outcome in words
+   
 if y_pred[0] == 0:
     winner = 'Draw'
 elif y_pred[0] == 1:
@@ -180,11 +180,14 @@ st.write("")
 
 st.info("⚠️ Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
 
+#Set warning message for betting amount more than 1000
 if Bet_Amount > 1000:
-    st.subheader("Please size your bet responsibly!")
+    st.subheader("❗ Please size your bet responsibly!")
 else:
     st.write("")
 #Print predicted outcome of the game with the use of a button!
+
+st.success(
 if st.button('PREDICT'):
     st.write("")
     st.subheader('Prediction:')
@@ -193,8 +196,9 @@ if st.button('PREDICT'):
     st.metric('', f'${winnings}', '')
 else:
     st.write('')
+)
 
-
+#Setting background image)
 def set_bg_hack_url():
     '''
     A function to set background image from a url.
