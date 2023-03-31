@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 from PIL import Image
-image = Image.open(‘epl_logo.png’)
+image = Image.open('epl_logo.png')
 st.image(image, width=600)
 
 # Set Page configuration
