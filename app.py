@@ -221,27 +221,29 @@ set_bg_hack_url()
 
 #Adding sidebar image
 
-def set_sidebar_image_url():
-        url='https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg'
-        st.markdown(
-        f"""
+def add_logo():
+    st.markdown(
+        """
         <style>
-            [data-testid="stSidebarNav"] + div {{
-                position:relative;
-                bottom: 0;
-                height:50%;
-                background-image: url({url});
-                background-size: 85% auto;
+            [data-testid="stSidebarNav"] {
+                background-image: url(https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg);
                 background-repeat: no-repeat;
-                background-position-x: center;
-                background-position-y: bottom;
-            }}
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+            [data-testid="stSidebarNav"]::before {
+                content: "My Company Name";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 30px;
+                position: relative;
+                top: 100px;
+            }
         </style>
         """,
         unsafe_allow_html=True,
     )
-
-set_sidebar_image_url()
+add_logo()
 
 
 #Unused code below:
