@@ -4,6 +4,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
+from PIL import Image
+image = Image.open('epl_logo.png')
+st.image(image, width=600)
+
 # Set Page configuration
 # Read more at https://docs.streamlit.io/1.6.0/library/api-reference/utilities/st.set_page_config
 st.set_page_config(page_title='Predict outcome of EPL match', page_icon='⚽', layout='wide', initial_sidebar_state='expanded')
@@ -16,7 +20,7 @@ df = pd.read_csv('new_df_final_to_streamlit.csv')
 
 
 #Writing a text for introduction
-st.write("Hello fellow football bettor, let's make our lives BET-ter! Key in the parameters as seen in the website, after which a predicted outcome and potential winnings will be generated! All the best!")
+st.write("Hello fellow football bettor, let's make our lives BET-ter! Key in the parameters as seen in the website, after which a predicted outcome and potential winnings will be generated! All the best! 💰")
 
 st.write("")
 
@@ -157,8 +161,8 @@ knn.fit(X_train, y_train)
 
 y_pred = knn.predict([[Home_Odds, Draw_Odds, Away_Odds, matchday_Monday, matchday_Saturday, matchday_Sunday, matchday_Thursday, matchday_Tuesday, matchday_Wednesday, Home_Team_Rank, Away_Team_Rank, ref_AMarriner, ref_ATaylor, ref_CFoy, ref_HWebb, ref_JMoss, ref_KFriend, ref_LMason, ref_LProbert, ref_MAtkinson, ref_MClattenburg, ref_MDean, ref_MOliver, ref_MRiley, ref_PDowd, ref_MJones]])
 
-#Generating the predicted outcome 
-
+#Generating the predicted outcome in words
+   
 if y_pred[0] == 0:
     winner = 'Draw'
 elif y_pred[0] == 1:
@@ -177,12 +181,19 @@ else:
     
 
 st.write("")
-st.write("")
 
+st.info("⚠️ Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
+
+#Set warning message for betting amount more than 1000
+if Bet_Amount > 1000:
+    st.subheader("❗ Please size your bet responsibly!")
+else:
+    st.write("")
 #Print predicted outcome of the game with the use of a button!
+
 if st.button('PREDICT'):
     st.write("")
-    st.subheader('Final Prediction:')
+    st.subheader('Prediction:')
     st.metric('', winner, '')
     st.subheader('Potential Winnings:')
     st.metric('', f'${winnings}', '')
@@ -190,7 +201,52 @@ else:
     st.write('')
 
 
-st.write("Disclaimer: Please note that this information should not be construed as a recommendation or endorsement of gambling. The National Council on Problem Gambling in Singapore provides a helpline for individuals who are struggling with gambling addiction. The helpline number is 1800-6-668-668.")
+#Setting background image)
+def set_bg_hack_url():
+    '''
+    A function to set background image from a url.
+    '''
+    image_url = "https://wallpaperaccess.com/download/dark-soccer-2671403"
+    st.markdown(
+        f"""
+        <style>
+            .stApp {{
+                background-image: url('{image_url}');
+                background-size: cover;
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+set_bg_hack_url()
+
+
+#Adding sidebar image
+
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url("https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg");
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+            [data-testid="stSidebarNav"]::before {
+                content: "My Company Name";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 30px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+add_logo()
 
 
 #Unused code below:
