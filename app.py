@@ -22,7 +22,7 @@ st.write("Hello fellow football bettor, let's make our lives BET-ter! Key in the
 st.write("")
 
 st.write("For Bet365 odds, you may refer to https://www.bet365.com.au/#/AC/B1/C1/D1002/E76169570/G40/H^1/ for more information.")
-st.write("For list of referees for the respective matches, you may refer to https://www.premierleague.com/referees/overview")
+st.write("For list of referees for the respective matches, you may refer to https://www.premierleague.com/referees/overview for more information.")
 st.write("For current rank of teams and their current form, you may refer to https://www.premierleague.com/tables for more information.")
 
 #Text inputs 
