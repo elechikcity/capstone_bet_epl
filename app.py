@@ -219,6 +219,27 @@ def set_bg_hack_url():
 set_bg_hack_url()
 
 
+#Adding sidebar image
+url='https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg'
+
+st.markdown(
+        f"""
+        <style>
+            [data-testid="stSidebarNav"] + div {{
+                position:relative;
+                bottom: 0;
+                height:50%;
+                background-image: url({url});
+                background-size: 85% auto;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: bottom;
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
 #
 
 #Unused code below:
