@@ -4,6 +4,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
+from PIL import Image
+image = Image.open(‘epl_logo.png’)
+st.image(image, width=600)
 
 # Set Page configuration
 # Read more at https://docs.streamlit.io/1.6.0/library/api-reference/utilities/st.set_page_config
