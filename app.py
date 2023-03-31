@@ -16,7 +16,7 @@ df = pd.read_csv('new_df_final_to_streamlit.csv')
 
 
 #Writing a text for introduction
-st.write("Hello fellow football bettor, let's make our lives BET-ter! Key in the parameters as seen in the website, after which a predicted outcome and potential winnings will be generated! All the best!")
+st.write("Hello fellow football bettor, let's make our lives BET-ter! Key in the parameters as seen in the website, after which a predicted outcome and potential winnings will be generated! All the best! 💰")
 
 st.write("")
 
