@@ -220,10 +220,10 @@ set_bg_hack_url()
 
 
 #Adding sidebar image
-url='https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg'
 
 def set_sidebar_image_url():
-st.markdown(
+        url='https://banner2.cleanpng.com/20180601/plw/kisspng-premier-league-england-national-football-team-live-5b10ebe5a94620.9186064015278356216934.jpg'
+        st.markdown(
         f"""
         <style>
             [data-testid="stSidebarNav"] + div {{
