@@ -187,7 +187,6 @@ else:
     st.write("")
 #Print predicted outcome of the game with the use of a button!
 
-st.success(
 if st.button('PREDICT'):
     st.write("")
     st.subheader('Prediction:')
@@ -196,7 +195,7 @@ if st.button('PREDICT'):
     st.metric('', f'${winnings}', '')
 else:
     st.write('')
-)
+
 
 #Setting background image)
 def set_bg_hack_url():
