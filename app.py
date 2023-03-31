@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from PIL import Image
 image = Image.open('epl_logo.png')
-st.image(image, width=600)
+st.image(image, width=200)
 
 # Set Page configuration
 # Read more at https://docs.streamlit.io/1.6.0/library/api-reference/utilities/st.set_page_config
